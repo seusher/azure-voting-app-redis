@@ -46,7 +46,7 @@ spec:
     spec:
       containers:
       - name: azure-vote-front
-        image: cseboulderupskill.azurecr.io/azure-vote-front:v1
+        image: ${ACR_LOGINSERVER}/azure-vote-front:kube${BUILD_NUMBER}
         ports:
         - containerPort: 80
         resources:
